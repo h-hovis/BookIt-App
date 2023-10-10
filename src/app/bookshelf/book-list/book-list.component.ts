@@ -13,19 +13,18 @@ export class BookListComponent {
       'The Hobbit',
       'J.R.R. Tolkien',
       'Fantasy',
-      'https://images-na.ssl-images-amazon.com/images/I/51ZQ7NB7KML._SX331_BO1,204,203,200_.jpg'
-      ),
+      'https://source.unsplash.com/50x50/?fantasy,book'),
     new Book(
       'The Fellowship of the Ring',
       'J.R.R. Tolkien',
       'Fantasy',
-      'https://images-na.ssl-images-amazon.com/images/I/51ZQ7NB7KML._SX331_BO1,204,203,200_.jpg'
+      'https://source.unsplash.com/50x50/?fantasy,book'
       ),
     new Book(
       'The Two Towers',
       'J.R.R. Tolkien',
       'Fantasy',
-      'https://images-na.ssl-images-amazon.com/images/I/51ZQ7NB7KML._SX331_BO1,204,203,200_.jpg'
+      'https://source.unsplash.com/50x50/?fantasy,book'
       ),
     ];
 }

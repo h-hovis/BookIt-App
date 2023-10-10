@@ -9,4 +9,10 @@ import { LibraryComponent } from './library/library.component';
 })
 export class AppComponent {
   title = 'BookIt-App';
+  pageDisplayed = "bookshelf";
+
+  onNavigatePage(page: string) {
+    // console.log("APP COMP:", page)
+    this.pageDisplayed = page;
+  }
 }
