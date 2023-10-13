@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Book } from 'src/app/shared/book/book.component';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { Book } from 'src/app/shared/book/book.model';
 
 
 @Component({
@@ -8,23 +8,32 @@ import { Book } from 'src/app/shared/book/book.component';
   styleUrls: ['./book-list.component.css']
 })
 export class BookListComponent {
+
+  @Output() currentSelectedBook = new EventEmitter<Book>();
+
+  handleBookSelected(book: Book) {
+    // console.log('BOOK: ', book);
+    this.currentSelectedBook.emit(book);
+  }
+
   myBooks: Book[] = [
     new Book(
-      'The Hobbit',
-      'J.R.R. Tolkien',
-      'Fantasy',
-      'https://source.unsplash.com/50x50/?fantasy,book'),
+      'Book of Testing',
+      'Will Wilder',
+      'Mystery',
+      'https://source.unsplash.com/50x50/?mystery,book'
+    ),
     new Book(
-      'The Fellowship of the Ring',
-      'J.R.R. Tolkien',
-      'Fantasy',
-      'https://source.unsplash.com/50x50/?fantasy,book'
-      ),
+      'Book of Testing 2',
+      'Will Wilder',
+      'Mystery',
+      'https://source.unsplash.com/50x50/?mystery,book'
+    ),
     new Book(
-      'The Two Towers',
-      'J.R.R. Tolkien',
-      'Fantasy',
-      'https://source.unsplash.com/50x50/?fantasy,book'
-      ),
+      'Book of Testing 3',
+      'Will Wilder',
+      'Mystery',
+      'https://source.unsplash.com/50x50/?mystery,book'
+    ),
     ];
 }

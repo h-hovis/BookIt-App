@@ -11,6 +11,7 @@ import { BookSearchComponent } from './library/book-search/book-search.component
 import { SharedComponent } from './shared/shared.component';
 import { NavigationComponent } from './shared/navigation/navigation.component';
 import { BookComponent } from './shared/book/book.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { BookComponent } from './shared/book/book.component';
     BookSearchComponent,
     SharedComponent,
     NavigationComponent,
+    DirectivesComponent,
     // BookComponent
   ],
   imports: [

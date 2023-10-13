@@ -9,19 +9,21 @@ import { Book } from 'src/app/shared/book/book.component';
 export class BookResultsComponent {
   allBooks: Book[] = [
     new Book(
-      'Sherlock Holmes',
-      'Arthur Conan Doyle',
-      'Mystery',
-      'https://source.unsplash.com/50x50/?mystery,book'),
+      'The Hobbit',
+      'J.R.R. Tolkien',
+      'Fantasy',
+      'https://source.unsplash.com/50x50/?fantasy,book'),
+
     new Book(
-      'The Hound of the Baskervilles',
-      'Arthur Conan Doyle',
-      'Mystery',
-      'https://source.unsplash.com/50x50/?mystery,book'),
+      'The Fellowship of the Ring',
+      'J.R.R. Tolkien',
+      'Fantasy',
+      'https://source.unsplash.com/50x50/?fantasy,book'),
+
     new Book(
-      'The Sign of the Four',
-      'Arthur Conan Doyle',
-      'Mystery',
-      'https://source.unsplash.com/50x50/?mystery,book'),
+      'The Two Towers',
+      'J.R.R. Tolkien',
+      'Fantasy',
+      'https://source.unsplash.com/50x50/?fantasy,book'),
     ];
 }
